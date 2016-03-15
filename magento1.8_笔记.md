@@ -118,6 +118,14 @@ class Alanstormdotcom_Helloworld_IndexController extends Mage_Core_Controller_Fr
 + $this->getRequest()->getParams() `获取所有的参数，返回key/value形式数组`
 + $this->getRequest()->getParam('username') `获取特定的参数`
 
+## 模板布局
+---
+
+布局xml文件一般在 `app\design\{area}\{package}\{theme}\layout` 下，Layout文件一般包含  
+ **block**,**reference**,**action**
+ 
+ 顶层的block位于 `page.xml`中
+
 
 
 
