@@ -57,7 +57,20 @@ class Index extends Action
     }
 }
 ```
-## 注意修改以上的命令空间和模块名称
+
+6. 在 `etc\frontend` 建立路由文件 `routes.xml`
+
+```
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+    <router id="standard">
+        <route id="模块名" frontName="模块名">
+            <module name="命令空间_模块名" />
+        </route>
+    </router>
+</config>
+```
+# 注意修改以上的命令空间和模块名称
 
 - 在项目文件主目录运行 `sudo bin\magento module:status`
 - `sudo bin\magento module:enable 命名空间_模块名`
