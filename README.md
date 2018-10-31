@@ -1,2 +1,2 @@
 # notes
-Notes of Jerry
+记录一些平时的笔记
